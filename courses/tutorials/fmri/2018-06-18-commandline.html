@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>The Command Line | B.T. Carter</title>
+<meta name="generator" content="Jekyll v3.7.2" />
+<meta property="og:title" content="The Command Line" />
+<meta name="author" content="Benjamin Carter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Purpose" />
+<meta property="og:description" content="Purpose" />
+<link rel="canonical" href="http://localhost:4000/courses/tutorials/fmri/2018-06-18-commandline.html" />
+<meta property="og:url" content="http://localhost:4000/courses/tutorials/fmri/2018-06-18-commandline.html" />
+<meta property="og:site_name" content="B.T. Carter" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-06-18T00:00:00-06:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/courses/tutorials/fmri/2018-06-18-commandline.html","headline":"The Command Line","dateModified":"2018-06-18T00:00:00-06:00","datePublished":"2018-06-18T00:00:00-06:00","author":{"@type":"Person","name":"Benjamin Carter"},"description":"Purpose","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/courses/tutorials/fmri/2018-06-18-commandline.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="B.T. Carter" />
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+  <div class="wrapper">
+    
+    
+    <a class="site-title" rel="author" href="/"><img src="/files/images/midsag.jpg" alt="Midsagittal brain" style="width:10%;">B.T. Carter</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/publications/">Publications</a>
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">The Command Line</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-06-18T00:00:00-06:00" itemprop="datePublished">
+        
+        Jun 18, 2018
+      </time>
+      
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Benjamin Carter</span></span>
+      </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <hr>
+<h3>Purpose</h3>
+
+	<p>This tutorial gives a quick introduction to the command line computing environment.</p>
+
+<h3>Learning Outcomes</h3>
+
+	<ol>
+		<li>Be proficient in navigation between directories in the command line environment.</li>
+		<li>Understand basic shell programming.</li>
+		<li>Be able to write a for loop to complete a repetitive task.</li>
+	</ol>
+<hr>
+
+<h2>A Blast from the Past</h2>
+
+		<center>
+		<figure style="display:block">
+			<img src = "/files/terminalWindow.png" alt="Terminal Window">
+			<figcaption>Figure 1 – An example a command line terminal. This is from my lab computer which I have customized somewhat.</figcaption>
+		</figure>
+		</center>
+
+	<p>The command line environment (think old school text based computing from the 70's and 80's or Homestarrunner) predates GUI (graphical user interface) based computing (like Mac OS, Microsoft Windows, and Linux). To the uninitiated it appears colorless, daunting and limited. Luckily for me my first interaction with command line computing happened when I was very young. Our first family computer was an old IBM machine. It had two floppy disk drives (the big ones that were actually floppy), 8-bit color monitor, terrible sound effects, an early version of a Windows file management system (separate from the operating system) and a dot-matrix printer. It resembled Strong Bad's Tandy 400 quite closely. It started in DOS by default and other programs had to be loaded manually. I remember having to switch floppy disks in and out of those disk drives to get some of my favorite games to load. The tedious operations of that early system gave me an appreciation for the borishly simple interface that was the command line as well as for more intuitive GUI based platforms I encountered later in elementary school and used throughout my high school and undergraduate years.
+	</p>
+
+	<iframe style="float:right" width="560" height="315" src="https://www.youtube.com/embed/zBIx-gP-I8c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+	<p>
+	While GUI interfaces have some definite advantages (they're less abstract and more user friendly) they have some distinct failings. Failings the command line interface uses to its advantage. GUI based interfaces are limited to serial processes, i.e. the user must direct each individual process in a step by step iteration. The command line offers the possibility of parallel processing, automation and finer control. It also uses less power than a GUI based system by not devoting as many resources to support to elaborate visual effects. This makes the command line environment appealing developers and scientists. Various programs like Analysis of Functional NeuroImages (AFNI), FSL, Convert3D, and ANTs all operate in the command line environment. Therefore it is important to become familiar with it and attain a basic level of proficiency.
+	</p>
+
+	<h4 style="color:red;font-family:impact">Disclaimer: You Need Unix</h4>
+
+	<p>
+	Now I need to warn you, from here on out I will be using a Unix based operating system. Windows operating systems generally do not have this capability because they utilize a different kernel (this is the programming that acts as an intermediary between computer hardware and user applications). Luckily you leap this hurdle by installing a Linux subsystem on Windows 10 (<a href="https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/background_install/install_instructs/steps_windows10.html">which you will have to do to use AFNI anyways</a>). Now is a good time to stop what you're doing and get to work installing this. Do not be surprised if this takes a day or two.
+	</p>
+
+<h3>Getting Familiar</h3>
+
+		<center>
+		<figure id="terminal" style="display:block">
+			<img src = "/files/terminalWindowAnnotated.png" alt="Terminal Window Annotated">
+			<figcaption>Figure 2</figcaption>
+		</figure>
+		</center>
+
+	<p>Open the command line application on your computer (Command Prompt in Windows, Terminal on Mac and Linux). Let's get oriented to what you are looking at. The first thing you'll notice is that it may not have the same color scheme as mine (you can customize the look and some of the operations via <i>Terminal</i> > <i>Preferences</i>). The next thing you will notice is your blinking cursor (see <a href="#terminal">Figure 2a</a>). This is where you will enter commands to execute. To the left of the cursor you should see an entry called the "path" (see <a href="#terminal">Figure 2b</a>) and displays your current location on your computer, also known as a working directory. Your path will display something like <code>/Users/your/user/name</code>. The region boxed in and labeled as "c" is something you can ignore for the moment and probably won't be present in your terminal window (another customization I've added).
+	</p>
+
+	<h4 style="color:red;font-family:impact">Warning: Do Not Copy & Paste</h4>
+
+	<p>Copying and pasting commands written by someone else into your terminal robs you of the chance to begin learning how to code. If you really want to understand how the code works you need to go through it line by line and character by character, so you might as well type it out yourself. Don't be lazy. You can do it!
+	</p>
+
+<h2>Commanding the Command Line</h2>
+
+<h3>Very Basic Syntax</h3>
+
+	<p>Rather than clicking on specific icons to select files or execute tasks the command line requires text input. This text or code has a specific syntax that must be followed. First a command is entered. This is followed by elements called arguments. Commands are specific programs designed to carry out a task. Arguments are input for that program. These are  used to modify how a program operates. Arguments include options, file paths, and variables. The basic order of terms looks something like this: <code>command argument1 argument2 argument3 ... </code>. Each program used in the command line has its own rules. You should look them up! Let's look up the help file for the command <code>echo</code>. This can be done within the command line using the command <code>man</code> followed by <code>echo</code>. Type <code>man echo</code> and press enter. You should get output in the terminal that looks something like this:
+	</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ECHO<span class="o">(</span>1<span class="o">)</span>                   BSD General Commands Manual                  ECHO<span class="o">(</span>1<span class="o">)</span>
+
+NAME
+     <span class="nb">echo</span> <span class="nt">--</span> write arguments to the standard output
+
+SYNOPSIS
+     <span class="nb">echo</span> <span class="o">[</span><span class="nt">-n</span><span class="o">]</span> <span class="o">[</span>string ...]
+
+DESCRIPTION
+     The <span class="nb">echo </span>utility writes any specified operands, separated by single blank
+     <span class="o">(</span><span class="sb">`</span> <span class="s1">') characters and followed by a newline (`\n'</span><span class="o">)</span> character, to the stan-
+     dard output.
+
+     The following option is available:
+
+     <span class="nt">-n</span>    Do not print the trailing newline character.  This may also be
+           achieved by appending <span class="sb">`</span><span class="se">\c</span><span class="s1">' to the end of the string, as is done by
+           iBCS2 compatible systems.  Note that this option as well as the
+           effect of `\c'</span> are implementation-defined <span class="k">in </span>IEEE Std 1003.1-2001
+           <span class="o">(</span><span class="sb">``</span>POSIX.1<span class="s1">''</span><span class="o">)</span> as amended by Cor. 1-2002.  Applications aiming <span class="k">for
+           </span>maximum portability are strongly encouraged to use <span class="nb">printf</span><span class="o">(</span>1<span class="o">)</span> to
+           suppress the newline character.
+
+     Some shells may provide a <span class="nb">builtin echo command </span>which is similar or iden-
+     tical to this utility.  Most notably, the <span class="nb">builtin echo </span><span class="k">in </span>sh<span class="o">(</span>1<span class="o">)</span> does not
+     accept the <span class="nt">-n</span> option.  Consult the <span class="nb">builtin</span><span class="o">(</span>1<span class="o">)</span> manual page.
+
+EXIT STATUS
+     The <span class="nb">echo </span>utility exits 0 on success, and <span class="o">&gt;</span>0 <span class="k">if </span>an error occurs.
+
+SEE ALSO
+     <span class="nb">builtin</span><span class="o">(</span>1<span class="o">)</span>, csh<span class="o">(</span>1<span class="o">)</span>, <span class="nb">printf</span><span class="o">(</span>1<span class="o">)</span>, sh<span class="o">(</span>1<span class="o">)</span>
+
+STANDARDS
+     The <span class="nb">echo </span>utility conforms to IEEE Std 1003.1-2001 <span class="o">(</span><span class="sb">``</span>POSIX.1<span class="s1">''</span><span class="o">)</span> as
+     amended by Cor. 1-2002.
+
+BSD                             April 12, 2003                             BSD
+<span class="o">(</span>END<span class="o">)</span></code></pre></figure>
+
+	<p>Press <code>q</code> to exit the man file. The command <code>man</code> (for manual) followed by any other command should bring up a command manual entry for that command. You can use these as a reference when writing code.
+	</p>
+
+<h3>Navigation & File Creation</h3>
+
+	<p>There are two types of objects you will encounter in the Unix environment: files and directories. Files are intuitive - they are a piece of information on the computer (like a text document, Microsoft Excel document, music or an image). Directories are best conceptualized by their common pictographic depiction – a folder. They are used to organize files somewhat like a filing cabinet. They can be organized hierarchically (i.e. <a href="https://is2-ssl.mzstatic.com/image/thumb/Video7/v4/5f/51/75/5f5175bf-5f14-39e7-9e37-30548c2d3044/source/1200x630bb.jpg"> folders within folders</a>).
+	</p>
+
+<h4>Print Working Directory: pwd</h4>
+
+	<p>The directory you are operating within is called your <b>working directory</b>. You can reveal your working directory at any time by typing the command <code>pwd</code>. For example:
+	</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[</span>EyeMac: ~]pwd</code></pre></figure>
+
+	 <p>Will output this:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/Users/ben88</code></pre></figure>
+
+	<p>
+	This indicates that I am currently within my home directory, <code>ben88</code>.
+	</p>
+
+<h4>List: ls</h4>
+
+	<p>The contents of a directory can be viewed by navigating to it and using the command <code>ls</code>. You can also view the contents by typing <code>ls</code> and then its relative or absolute path.
+	</p>
+
+	<p>Using <code>ls</code> in the working directory:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[</span>EyeMac: ~]ls
+@update.afni.binaries     Library                   bin
+Applications              Movies                    build
+Box                       Music                     get-pip.py
+Desktop                   OneDrive - BYU Office 365 logfiles
+Documents                 Pictures                  matlab
+Downloads                 Public                    research_bin
+Dropbox                   abin                      rubygems-2.7.5
+<span class="o">[</span>EyeMac: ~]</code></pre></figure>
+
+	<p>Using <code>ls</code> with a document path:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[</span>EyeMac: ~]ls ~/Documents/PDFs/
+Yassa, Stark - 2011 - Trends <span class="k">in </span>Neurosciences.pdf
+textbooks
+<span class="o">[</span>EyeMac: ~]</code></pre></figure>
+
+<h4>Change Directory: cd</h4>
+
+	<p>You can navigate to another directory using the command <code>cd</code>. It is used by entering <code>cd</code> and then the relative or absolute path to the directory.
+	</p>
+
+	<p>For example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[</span>EyeMac: ~]cd Documents/
+<span class="o">[</span>EyeMac: Documents]pwd
+/Users/ben88/Documents</code></pre></figure>
+
+	<p>If you omit the directory path then the Terminal returns to the home directory by default.</p>
+
+<h4>Making a directory: mkdir</h4>
+
+	<p>The command <code>mkdir</code> is used to create a directory. Simply enter the command <code>mkdir</code> and the name of the directory.
+	</p>
+
+	<p>So if we were to make a new directory called <code>myDirectory</code> in my home directory then we should get something like this:
+	</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[</span>EyeMac: ~]mkdir myDirectory
+<span class="o">[</span>EyeMac: ~]ls
+@update.afni.binaries     Movies                    get-pip.py
+Applications              Music                     logfiles
+Box                       OneDrive - BYU Office 365 matlab
+Desktop                   Pictures                  myDirectory
+Documents                 Public                    research_bin
+Downloads                 abin                      rubygems-2.7.5
+Dropbox                   bin
+Library                   build
+<span class="o">[</span>EyeMac: ~]</code></pre></figure>
+
+<h3>The For Loop</h3>
+
+	<p>Now that we've covered simple navigation and directory creation we can move onto a more complex topic: the For Loop. This command is used to carryout repetitive processes so the user does not have to manually complete initiate every single iteration. Ever had to edit a but of file names so they all have consistent labeling, or make repetitive changes to a CSV file in Excel? Wish there were a faster way to do that? For loops are your new best friend. For loops are especially useful in neuroimaging during image preprocessing and analysis, enabling the researcher to give a generic set of commands to be carried out on each participant's dataset and then execute these as a group rather than manually do it for each subject.
+</p>
+
+	<p>Basic syntax for the for loop is as follows:
+	</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">for </span>i <span class="k">in</span> <span class="o">{</span>&lt;list of variables&gt;<span class="o">}</span><span class="p">;</span> <span class="k">do</span>
+	&lt;commands&gt;
+<span class="k">done</span></code></pre></figure>
+
+	<p>Let me demonstrate how for loops work with a simple scenario. Let's say we were conducting a study with 10 participants (who we will refer to by their subject identifiers) and needed to create a text document for each participant that would later contain notes about their study participation. We could use a for loop to create these text documents.
+	</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">for </span>i <span class="k">in</span> <span class="o">{</span> 1 2 3 4 5 6 7 8 9 10 <span class="o">}</span><span class="p">;</span> <span class="k">do
+	</span><span class="nb">touch </span>subject_<span class="k">${</span><span class="nv">i</span><span class="k">}</span>.txt
+<span class="k">done</span></code></pre></figure>
+
+	<p>This script will create 10 text files. Each file is named by participant ID (e.g. <code>subject_1.txt</code>, <code>subject_2.txt</code>). The command <code>touch</code> creates the file. The letter <code>i</code> is a variable. Variables are used in coding to represent a value (in this case whatever subject number the loop sets <code>i</code> to be). Variables are flagged with an <code>$</code> within the command.
+	</p>
+
+<h3>Don't worry, it gets better</h3>
+
+	<p>This is just a small taste of the number of commands and processes that are available in the command line. We are going to use and install quite a few more! It may seem obtuse at first but once you master the command line a whole new world of efficiency will be opened up to you. If this is your first time venturing beyond GUI interfaces then take this opportunity to stretch yourself a bit. This is how your parents and grandparents were introduced to computers! If all of this seems a bit much to wrap your head around at the moment, don't worry too much about it. Help is out there! Computer coding is one of the few egalitarian pursuits left in the world. A host of online services exist offering free tutorials. Get involved in a web forum. With the right search term or question you should be able to find an answer.
+	</p>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~- -->
+<hr>
+
+<h2>Learning Activity: Ubuntu Tutorial</h2>
+
+	<h3>Purpose</h3>
+	<p>The purpose of this assignment is to familiarize you with the Command Line computing environment, which is the primary environment utilized by AFNI and other software packages. This basic literacy will allow you to take advantage of the command line and process large datasets in a short amount of time rather than having to perform them individually.</p>
+
+	<h3>Instructions</h3>
+	<p>Complete the <a href ="https://tutorials.ubuntu.com/tutorial/command-line-for-beginners#0">Command line tutorial</a> from Ubuntu. Other tutorials are available online from services like Codecademy and Data Camp but you may have to pay to access them so stick with the free stuff.</p>
+
+
+<h2>Learning Assessment: Your First For Loop</h2>
+
+	<h3>Purpose</h3>
+	<p>To test your ability to create code.</p>
+
+	<h3>Instructions</h3>
+	<p>Write a for loop that will list numbers 1 through 20 on your screen in this manner:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">1
+2
+3
+4
+..
+20</code></pre></figure>
+
+<hr>
+
+<h2>Slides</h2>
+
+<center>
+<iframe src="//slides.com/bencarter-1/thecommandline/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</center>
+
+<hr>
+
+<h2>Additional Resources</h2>
+
+<p>Some coding tutorials can be found at: <a href="https://bento.io">Bento.io</a>, <a href="https://www.codecademy.com/learn">Codecademy</a>, <a href="http://www.learnshell.org">LearnShell.org</a>, and <a href="https://learncodethehardway.org">Learn Code the Hard Way</a>. There is a host of other quality services out there. Just take a look!
+
+<p><a href="https://ocw.mit.edu/index.htm">MIT OpenCourseware</a> is another cool resource. Did you know MIT offers a version of all class curricula online for free? Who needs to pay tuition?!
+</p>
+
+<p>The Linux Documentation Project is an online encyclopedic resource you can use as a reference to look up or discover commands you can use in the command line. Two good places to start are the <a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html">Bash Guide for Beginners</a> and the <a href="http://tldp.org/LDP/abs/html/">Advanced Bash-Scripting Guide</a>. It also offers some simple tutorials too.
+</p>
+
+<p><a href="https://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything">A Command Line Primer for Beginners</a> is a article written by Lifehacker that has a few other commands in it that you can use to get started.
+</p>
+
+  </div>
+
+  
+
+  <a class="u-url" href="/courses/tutorials/fmri/2018-06-18-commandline.html" hidden></a>
+
+  <!-- this adds math functionality -->
+  
+
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">B.T. Carter</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            
+              Benjamin T. Carter
+            
+            </li>
+            
+            <li><a class="u-email" href="mailto:ben88@byu.edu">ben88@byu.edu</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+  
+  
+  
+  <li><a href="https://github.com/btcarter"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">btcarter</span></a></li>
+  
+  
+  
+  <li><a href="https://www.twitter.com/aReadingApe"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">aReadingApe</span></a></li>
+  
+  
+  
+</ul>
+
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>A website dedicated to all things neuroscience, neuroimaging, tutorials, graduate school, and the endless wheel of scientific inquiry. © 2019 Benjamin Carter.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

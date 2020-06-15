@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Setting Up Your Computer | B.T. Carter</title>
+<meta name="generator" content="Jekyll v3.7.2" />
+<meta property="og:title" content="Setting Up Your Computer" />
+<meta name="author" content="Benjamin Carter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A website dedicated to all things neuroscience, neuroimaging, tutorials, graduate school, and the endless wheel of scientific inquiry. © 2019 Benjamin Carter." />
+<meta property="og:description" content="A website dedicated to all things neuroscience, neuroimaging, tutorials, graduate school, and the endless wheel of scientific inquiry. © 2019 Benjamin Carter." />
+<link rel="canonical" href="http://localhost:4000/courses/tutorials/fmri/2018-06-25-fmrisoftware.html" />
+<meta property="og:url" content="http://localhost:4000/courses/tutorials/fmri/2018-06-25-fmrisoftware.html" />
+<meta property="og:site_name" content="B.T. Carter" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-06-25T00:00:00-06:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/courses/tutorials/fmri/2018-06-25-fmrisoftware.html","headline":"Setting Up Your Computer","dateModified":"2018-06-25T00:00:00-06:00","datePublished":"2018-06-25T00:00:00-06:00","author":{"@type":"Person","name":"Benjamin Carter"},"description":"A website dedicated to all things neuroscience, neuroimaging, tutorials, graduate school, and the endless wheel of scientific inquiry. © 2019 Benjamin Carter.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/courses/tutorials/fmri/2018-06-25-fmrisoftware.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="B.T. Carter" />
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+  <div class="wrapper">
+    
+    
+    <a class="site-title" rel="author" href="/"><img src="/files/images/midsag.jpg" alt="Midsagittal brain" style="width:10%;">B.T. Carter</a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/publications/">Publications</a>
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Setting Up Your Computer</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-06-25T00:00:00-06:00" itemprop="datePublished">
+        
+        Jun 25, 2018
+      </time>
+      
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Benjamin Carter</span></span>
+      </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <hr>
+
+<h2>Installing Neuroimaging Software</h2>
+
+<p>You are going to need a few software packages in order analyze your imaging data. Luckily everything we are going to use is free so you won't be out any money. The bad news is that this is probably going to take quite a bit of time (an hour or two). So sit down and get settled.
+</p>
+
+<h3>Analysis of Functional NeuroImages (AFNI)</h3>
+
+<figure style="float:left">
+		<img src = "https://afni.nimh.nih.gov/sites/default/files/default_images/afnilogo.png" alt="AFNI logo">
+</figure>
+
+<p>Go to the <a href="https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/background_install/main_toc.html">Installation and Background Page</a> on the AFNI website. Follow the installation guide instructions for your flavor of Linux, Apple or Windows operating system. You can omit the section of the instructions titled <em>Preparing for Bootcamp</em> (it's just material used during the NIMH's courses, so if you do install it that's not a problem). AFNI is free software written and maintained by Bob Cox and his team at the NIH. It can be used to analyze a number of different types of neuroimaging data. We are going to use it for our functional data.<p>
+
+<h3>Homebrew</h3>
+
+<figure style="float:right">
+		<img src = "https://brew.sh/assets/img/apple-touch-icon.png" alt="Homebrew logo" width = "100">
+</figure>
+
+<p>Homebrew is a software management system. It will facilitate the installation of other software packages. To install it open the terminal and input the following:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/usr/bin/ruby <span class="nt">-e</span> <span class="s2">"</span><span class="k">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span></code></pre></figure>
+
+<h3>CMake</h3>
+
+<figure style="float:left">
+		<img src = "data:image/jpeg;base64,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" alt="CMake logo" width="100">
+</figure>
+
+<p>Now that Homebrew is installed you can get cmake. Enter this in the terminal:
+</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">brew <span class="nb">install </span>cmake</code></pre></figure>
+
+<p>There should be quite a bit of output in the terminal window when you are done.</p>
+
+<h3>Advanced Normalization Tools (ANTs)</h3>
+
+<figure style="float:center">
+		<img src = "http://www.biii.eu/sites/default/files/2018-01/ants_logo.png" alt="ANTs logo">
+</figure>
+
+<p>ANTs is used to build template brains (group average brains). To download ANTs start by opening the terminal and navigate to <code>~/Applications/build/</code> directory. Then download the latest version of ANTs into that directory. This is being downloaded directly from a public repository, GitHub. GitHub is used by developers, scientists and others as a place to store code and make it available to others.
+</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mkdir</span> <span class="nt">-p</span> ~/Applications/build
+<span class="nb">cd</span> ~/Applications/build
+git clone git://github.com/stnava/ANTs.git/
+<span class="nb">cd</span> ~/Applications/
+<span class="nb">mkdir </span>ants <span class="o">&amp;&amp;</span> <span class="nb">cd </span>ants
+ccmake ../build/ANTs</code></pre></figure>
+
+<p>Press <code>c</code> to configure. Press <code>c</code> until <code>g</code> becomes an option on the menu at the bottom of the terminal window. Press <code>g</code>. Exit CMake and enter this command:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">make</code></pre></figure>
+
+<p>This installation will take some time to finish. Make sure your computer does not go to sleep or shutdown while this is happening. Eat some lunch, watch cat videos, read a book, or write a book while you wait for it to finish.
+</p>
+
+<p>Once the installation has finished you can check to make sure it installed correctly by entering the command <code>N4BiasFieldCorrection</code>. This should produce the following output:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[</span>EyeMac: ~]N4BiasFieldCorrection
+
+COMMAND:
+     N4BiasFieldCorrection
+          N4 is a variant of the popular N3 <span class="o">(</span>nonparameteric nonuniform normalization<span class="o">)</span>
+          retrospective bias correction algorithm. Based on the assumption that the
+          corruption of the low frequency bias field can be modeled as a convolution of
+          the intensity histogram by a Gaussian, the basic algorithmic protocol is to
+          iterate between deconvolving the intensity histogram by a Gaussian, remapping
+          the intensities, and <span class="k">then </span>spatially smoothing this result by a B-spline modeling
+          of the bias field itself. The modifications from and improvements obtained over
+          the original N3 algorithm are described <span class="k">in </span>the following paper: N. Tustison et
+          al., N4ITK: Improved N3 Bias Correction, IEEE Transactions on Medical Imaging,
+          29<span class="o">(</span>6<span class="o">)</span>:1310-1320, June 2010.
+
+OPTIONS:
+     <span class="nt">-d</span>, <span class="nt">--image-dimensionality</span> 2/3/4
+          This option forces the image to be treated as a specified-dimensional image. If
+          not specified, N4 tries to infer the dimensionality from the input image.
+
+     <span class="nt">-i</span>, <span class="nt">--input-image</span> inputImageFilename
+          A scalar image is expected as input <span class="k">for </span>bias correction. Since N4 log transforms
+          the intensities, negative values or values close to zero should be processed
+          prior to correction.
+
+     <span class="nt">-x</span>, <span class="nt">--mask-image</span> maskImageFilename
+          If a mask image is specified, the final bias correction is only performed <span class="k">in </span>the
+          mask region. If a weight image is not specified, only intensity values inside
+          the masked region are used during the execution of the algorithm. If a weight
+          image is specified, only the non-zero weights are used <span class="k">in </span>the execution of the
+          algorithm although the mask region defines where bias correction is performed <span class="k">in
+          </span>the final output. Otherwise bias correction occurs over the entire image domain.
+          See also the option description <span class="k">for </span>the weight image.
+
+     <span class="nt">-r</span>, <span class="nt">--rescale-intensities</span> 0/<span class="o">(</span>1<span class="o">)</span>
+          At each iteration, a new intensity mapping is calculated and applied but there
+          is nothing which constrains the new intensity range to be within certain values.
+          The result is that the range can <span class="s2">"drift"</span> from the original at each iteration.
+          This option rescales to the <span class="o">[</span>min,max] range of the original image intensities
+          within the user-specified mask.
+
+     <span class="nt">-w</span>, <span class="nt">--weight-image</span> weightImageFilename
+          The weight image allows the user to perform a relative weighting of specific
+          voxels during the B-spline fitting. For example, some studies have shown that N3
+          performed on white matter segmentations improves performance. If one has a
+          spatial probability map of the white matter, one can use this map to weight the
+          b-spline fitting towards those voxels which are more probabilistically
+          classified as white matter. See also the option description <span class="k">for </span>the mask image.
+
+     <span class="nt">-s</span>, <span class="nt">--shrink-factor</span> 1/2/3/<span class="o">(</span>4<span class="o">)</span>/...
+          Running N4 on large images can be <span class="nb">time </span>consuming. To lessen computation <span class="nb">time</span>,
+          the input image can be resampled. The shrink <span class="nb">factor</span>, specified as a single
+          integer, describes this resampling. Shrink factors &lt;<span class="o">=</span> 4 are commonly used.Note
+          that the shrink <span class="nb">factor </span>is only applied to the first two or three dimensions
+          which we assume are spatial.
+
+     <span class="nt">-c</span>, <span class="nt">--convergence</span> <span class="o">[</span>&lt;<span class="nv">numberOfIterations</span><span class="o">=</span>50x50x50x50&gt;,&lt;<span class="nv">convergenceThreshold</span><span class="o">=</span>0.0&gt;]
+          Convergence is determined by calculating the coefficient of variation between
+          subsequent iterations. When this value is less than the specified threshold from
+          the previous iteration or the maximum number of iterations is exceeded the
+          program terminates. Multiple resolutions can be specified by using <span class="s1">'x'</span> between
+          the number of iterations at each resolution, e.g. 100x50x50.
+
+     <span class="nt">-b</span>, <span class="nt">--bspline-fitting</span> <span class="o">[</span>splineDistance,&lt;<span class="nv">splineOrder</span><span class="o">=</span>3&gt;]
+                           <span class="o">[</span>initialMeshResolution,&lt;<span class="nv">splineOrder</span><span class="o">=</span>3&gt;]
+          These options describe the b-spline fitting parameters. The initial b-spline
+          mesh at the coarsest resolution is specified either as the number of elements <span class="k">in
+          </span>each dimension, e.g. 2x2x3 <span class="k">for </span>3-D images, or it can be specified as a single
+          scalar parameter which describes the isotropic sizing of the mesh elements. The
+          latter option is typically preferred. For each subsequent level, the spline
+          distance decreases <span class="k">in </span>half, or equivalently, the number of mesh elements doubles
+          Cubic splines <span class="o">(</span>order <span class="o">=</span> 3<span class="o">)</span> are typically used. The default setting is to employ a
+          single mesh element over the entire domain, i.e., <span class="nt">-b</span> <span class="o">[</span>1x1x1,3].
+
+     <span class="nt">-t</span>, <span class="nt">--histogram-sharpening</span> <span class="o">[</span>&lt;<span class="nv">FWHM</span><span class="o">=</span>0.15&gt;,&lt;<span class="nv">wienerNoise</span><span class="o">=</span>0.01&gt;,&lt;<span class="nv">numberOfHistogramBins</span><span class="o">=</span>200&gt;]
+          These options describe the histogram sharpening parameters, i.e. the
+          deconvolution step parameters described <span class="k">in </span>the original N3 algorithm. The
+          default values have been shown to work fairly well.
+
+     <span class="nt">-o</span>, <span class="nt">--output</span> correctedImage
+                  <span class="o">[</span>correctedImage,&lt;biasField&gt;]
+          The output consists of the bias corrected version of the input image.
+          Optionally, one can also output the estimated bias field.
+
+     <span class="nt">--version</span>
+          Get Version Information.
+
+     <span class="nt">-v</span>, <span class="nt">--verbose</span> <span class="o">(</span>0<span class="o">)</span>/1
+          Verbose output.
+
+     <span class="nt">-h</span>
+          Print the <span class="nb">help </span>menu <span class="o">(</span>short version<span class="o">)</span><span class="nb">.</span>
+
+     <span class="nt">--help</span>
+          Print the <span class="nb">help </span>menu.</code></pre></figure>
+
+<h3>AC-PC Detect</h3>
+
+<p>AC-PC detect is used to align brains into a standard imaging orientation. You can obtain the latest version from <a href="www.nitrc.org/projects/art">the Automatic Registration Toolbox</a> page on the NeuroImaging Tools &amp; Resources Collaboratory. Once you have downloaded the file, execute the following commands in the command line:
+</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">ARTHOME</span><span class="o">=</span>/usr/local/art
+<span class="nb">mv</span> ~/Downloads/acpcdetect2.0<span class="k">*</span>.tar.gz <span class="nv">$ARTHOME</span>
+<span class="nb">cd</span> <span class="nv">$ARTHOME</span>
+<span class="nb">tar</span> <span class="nt">-xvzf</span> acpcdetect2.0<span class="k">*</span>.tar.gz</code></pre></figure>
+
+<p>Once finished, add the following lines to your bash profile:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">ARTHOME</span><span class="o">=</span>/usr/local/art
+<span class="nb">export </span>ARTHOME</code></pre></figure>
+
+<p>Then move the program <code>$ARTHOME/acpcdetect</code> to a bin directory in your path.</p>
+
+<h3>dcm2niix</h3>
+
+<p>Change into the Applications directory and create the directory <em>dcm</em>. Change into that directory, download the code repository for <code>dcm2niix</code> from GitHub and use <code>make</code> to compile the program.
+</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd
+mkdir</span> <span class="nt">-p</span> ~/build/
+<span class="nb">cd</span> ~/build/
+git clone https://github.com/rordenlab/dcm2niix.git
+<span class="nb">mkdir</span> <span class="nt">-p</span> ~/Applications/dcm2niix
+<span class="nb">cd</span> ~/Applications/dcm2niix
+cmake ~/build/dcm2niix</code></pre></figure>
+
+<p>Once <code>ccmake</code> has launched press 'c' and then 'g.' Then enter <code>make</code>. It should only take a few minutes to make the program. Confirm proper installation with the following:
+</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">~/Applications/dcm2niix/bin/dcm2niix</code></pre></figure>
+
+<p>If a help file is generated then you're set!</p>
+
+  </div>
+
+  
+
+  <a class="u-url" href="/courses/tutorials/fmri/2018-06-25-fmrisoftware.html" hidden></a>
+
+  <!-- this adds math functionality -->
+  
+
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">B.T. Carter</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            
+              Benjamin T. Carter
+            
+            </li>
+            
+            <li><a class="u-email" href="mailto:ben88@byu.edu">ben88@byu.edu</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+  
+  
+  
+  <li><a href="https://github.com/btcarter"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">btcarter</span></a></li>
+  
+  
+  
+  <li><a href="https://www.twitter.com/aReadingApe"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">aReadingApe</span></a></li>
+  
+  
+  
+</ul>
+
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>A website dedicated to all things neuroscience, neuroimaging, tutorials, graduate school, and the endless wheel of scientific inquiry. © 2019 Benjamin Carter.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
