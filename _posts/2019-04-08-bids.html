@@ -1,0 +1,37 @@
+---
+layout: post
+title:  Data Structure in NeuroImaging
+date:   2019-03-28 22:00:00 -0700
+categories: blog
+author: Benjamin Carter
+mathjax: true
+---
+
+<h2>The BIDS</h2>
+
+<p>Neuroimaging projects produce a lot of data. For example, one of my recent projects produced an average of 3 GB of data per participant after the analysis was completed (and there were over 40 participants, which means there was about 120 GB of data). And that was for one functional analysis. Once I complete the structural, DTI, and resting state analyses I expect the data will grow exponentially, and this is for just one study. Imaging how much data I will be dealing with after a decade of research.
+</p>
+<p>
+Keeping this data organized is time consuming, a little complicated, and is not standardized between labs, until recently. Gorgolewski, et al. (2016) has proposed a standardized method for researchers to implement called the <i>brain imaging data structure</i> (BIDS). It looks something like this.
+</p>
+
+<figure>
+	<img src="https://media.nature.com/lw926/nature-assets/sdata/2016/sdata201644/images_hires/sdata201644-f1.jpg" alt="Figure 1, example of BIDS from Gorgolewski, et al 2016.">
+	<figcaption>Figure 1 from Gorgolewski, et al 2016. An example of a BIDS formatted dataset</figcaption>
+</figure>
+
+<p>I'll save myself summarizing the paper. It's fairly simple so if you want to learn more about it just checkout the link listed below. The above figure does a decent job of capturing the idea. Essentially, DICOMs (and other forms of raw data) are kept in a separate directory from your processed data. Derived data (i.e. the data you produce during preprocessing and analysis like BRIK and HEAD files in AFNI) is then organized within a study directory by subject, then within a directory for that data type.
+</p>
+
+<p>Another layer of organization can be found in file naming syntax. Files are named such that if they are moved from their home directory they can still be identified. The naming convention is as follows: <code>participantID_imagingSequence</code>. Additional files are included for metadata such as participant lists, and lists of data types with descriptions. These are usually formated as tab-delimited files.
+</p>
+
+<p>For more information I really do suggest reading the original article (see below). It should only take about 20 minutes!
+</p>
+
+<hr>
+
+<h3>References</h3>
+
+<p>Gorgolewski, K. J., Auer, T., Calhoun, V. D., Craddock, R. C., Das, S., Duff, E. P., ... & Handwerker, D. A. (2016). <a href="https://www.nature.com/articles/sdata201644">The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments</a>. <i>Scientific Data, 3</i>, 160044.
+</p>
