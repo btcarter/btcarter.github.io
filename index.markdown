@@ -5,4 +5,4 @@
 layout: home
 ---
 
-Hello! Thank you for coming to see the blog. We are in process of a redesign. Content will be available soon!
+
